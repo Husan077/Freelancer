@@ -1,0 +1,108 @@
+@import 'fonts.css';
+
+:root {
+    --f700: 'Montserrat-Bold';
+    --f400: 'Montserrat-Regular';
+    --psr: 'Product-Sans-Regular';
+    --gray: #282929;
+    --dark: #1f2020;
+    --yellow: #d3a90b;
+    --w: #ffffff;
+}
+
+/* ------------------------------------- */
+
+body{
+    background: var(--gray);
+}
+
+.logo{
+    border: 1px solid transparent;
+    border-image: 1 linear-gradient( 133deg, var(--w) 35%, var(--yellow) 65%);
+    font-size: 26px;
+    color: var(--yellow);
+    text-transform: uppercase;
+    font-family: var(--psr);
+    transition: 0.5s;
+    padding: 6px 18px;
+}
+
+.logo__text{
+    color: var(--w);
+}
+
+.logo:hover{
+    color: var(--w);
+    text-decoration: none;
+}
+
+.header_nav-link{
+    font-size: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: var(--psr);
+    margin-left: 53px;
+    transition: 0.2s;
+}
+
+.header_nav-link:hover{
+    color: var(--yellow);
+    text-decoration: none;
+}
+
+.header__logo{
+    color: var(--w);
+    font-size: 40px;
+}
+
+.header__text-title{
+    font-size: 60px;
+    color: var(--w);
+    font-family: var(--psr);
+    text-transform: uppercase;
+}
+
+.header__text-end{
+    font-size: 22px;
+    color: var(--w);
+    font-family: var(--psr);
+}
+
+.header__text{
+    background: url(../images/header_img_bg.jpg) no-repeat center center / cover;
+}
+
+/* ---------------------------------------------------------------------- */
+
+.main__info-title{
+    font-size: 28px;
+    color: var(--yellow);
+    text-transform: uppercase;
+    font-family: var(--psr);
+}
+
+.main__info-title::before,
+.main__info-title::after
+{
+    content: '';
+    display: block;
+    width: 52px;
+    height: 2px;
+    background: var(--w);
+    margin: 0 0 10px auto;
+}
+
+.main__info-title::after{
+    margin: 10px 0 0 0 ;
+}
+
+.main__info-end{
+    font-size: 18px;
+    color: var(--w);
+    font-family: var(--f400);
+    margin-top: 30px;
+}
+
+.main__info{
+    padding: 60px 0;
+}
